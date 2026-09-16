@@ -1,0 +1,55 @@
+/* ============================================
+   RESPONSIVE — Media Queries
+   ============================================ */
+
+/* ---- Tablet (768px - 1024px) ---- */
+@media (max-width: 1024px) {
+  .section {
+    padding: var(--space-3xl) 0;
+  }
+
+  .container {
+    padding: 0 var(--space-lg);
+  }
+}
+
+/* ---- Mobile (< 768px) ---- */
+@media (max-width: 768px) {
+  :root {
+    --fs-display: 2.5rem;
+    --fs-h1: 2rem;
+    --fs-h2: 1.75rem;
+    --fs-h3: 1.25rem;
+    --space-section: 4rem;
+  }
+
+  .section {
+    padding: var(--space-2xl) 0;
+  }
+
+  .container {
+    padding: 0 var(--space-md);
+  }
+
+  .btn {
+    padding: 12px 24px;
+    font-size: 0.8125rem;
+  }
+}
+
+/* ---- Small Mobile (< 480px) ---- */
+@media (max-width: 480px) {
+  :root {
+    --fs-display: 2rem;
+    --fs-h1: 1.75rem;
+    --fs-h2: 1.5rem;
+    --fs-h3: 1.125rem;
+  }
+}
+
+/* ---- Large Desktop (> 1400px) ---- */
+@media (min-width: 1400px) {
+  .container {
+    padding: 0;
+  }
+}
