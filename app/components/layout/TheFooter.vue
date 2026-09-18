@@ -1,159 +1,120 @@
 <template>
-  <footer class="footer">
-    <div class="container footer__container">
-      <div class="footer__top">
-        <div class="footer__brand">
-          <a href="#home" class="footer__logo">
-            <span style="color: var(--color-trito-yellow, #FFD15C);">.</span>Tegue Franck
-          </a>
-          <p class="footer__tagline">
-            Conception et développement d'applications web modernes et performantes.
-          </p>
+  <footer class="orido_tm_section">
+    <div class="orido_tm_copyright">
+      <div class="container">
+        <div class="copyright_inner">
+          <!-- Brand Logo / Name -->
+          <div class="logo">
+            <a href="#home" class="footer__logo">
+              <span class="logo__dot">.</span>
+              <span class="logo__text">TEGUE Franck</span>
+            </a>
+          </div>
+
+          <!-- Copyright 2026 -->
+          <div class="copy">
+            <p>&copy; 2026 TEGUE Franck. Tous droits réservés.</p>
+          </div>
         </div>
-
-        <nav class="footer__nav">
-          <a href="#home" class="footer__nav-link">Accueil</a>
-          <a href="#about" class="footer__nav-link">À propos</a>
-          <a href="#skills" class="footer__nav-link">Compétences</a>
-          <a href="#services" class="footer__nav-link">Services</a>
-          <a href="#projects" class="footer__nav-link">Projets</a>
-          <a href="#contact" class="footer__nav-link">Contact</a>
-        </nav>
-
-        <button class="footer__back-to-top" aria-label="Back to top" @click="scrollToTop">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <polyline points="18 15 12 9 6 15"></polyline>
-          </svg>
-        </button>
-      </div>
-
-      <div class="footer__bottom">
-        <p class="footer__copy">
-          Conçu & Développé avec <span class="footer__heart">♥</span> avec Nuxt 4 & Vue 3.
-        </p>
-        <p class="footer__rights">
-          © {{ currentYear }} TEGUE Franck. Tous droits réservés.
-        </p>
       </div>
     </div>
   </footer>
 </template>
 
 <script setup lang="ts">
-const currentYear = new Date().getFullYear()
-
-const scrollToTop = () => {
-  if (typeof window !== 'undefined') {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    })
-  }
-}
 </script>
 
 <style scoped>
-.footer {
-  background: var(--color-bg-primary);
-  border-top: 1px solid var(--color-border);
-  padding: var(--space-3xl) 0 var(--space-xl);
+/* ===================================================
+   ORIDO COPYRIGHT / FOOTER
+   Exact Background Color: #FFC448
+   =================================================== */
+
+.orido_tm_section {
+  width: 100%;
+  clear: both;
+  position: relative;
 }
 
-.footer__top {
+.orido_tm_copyright {
+  width: 100%;
+  clear: both;
+  background-color: #FFC448;
+  padding: 32px 0;
+  border-top: 1px solid rgba(18, 20, 29, 0.08);
+  position: relative;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.copyright_inner {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--space-2xl);
-  padding-bottom: var(--space-2xl);
-  border-bottom: 1px solid var(--color-border);
+  gap: 24px;
 }
 
-.footer__brand {
-  max-width: 300px;
-}
-
+/* Brand Name / Logo */
 .footer__logo {
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
-  font-weight: var(--fw-bold);
-  color: var(--color-text-primary);
+  display: inline-flex;
+  align-items: baseline;
   text-decoration: none;
-  display: inline-block;
-  margin-bottom: var(--space-xs);
+  font-family: var(--font-heading, 'Space Grotesk', sans-serif);
+  font-size: 26px;
+  font-weight: 800;
+  color: #12141D;
+  letter-spacing: -0.5px;
+  transition: opacity 0.25s ease;
 }
 
-.footer__tagline {
-  font-size: var(--fs-small);
-  color: var(--color-text-tertiary);
-  margin-bottom: 0;
+.footer__logo:hover {
+  opacity: 0.85;
 }
 
-.footer__nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-lg);
+.logo__dot {
+  font-size: 34px;
+  color: #12141D;
+  line-height: 1;
+  margin-right: 2px;
 }
 
-.footer__nav-link {
-  font-size: var(--fs-small);
-  color: var(--color-text-secondary);
-  text-decoration: none;
-  transition: color var(--duration-fast);
+.logo__text {
+  color: #12141D;
 }
 
-.footer__nav-link:hover {
-  color: var(--color-accent);
-}
-
-.footer__back-to-top {
-  width: 44px;
-  height: 44px;
-  border-radius: var(--radius-circle);
-  background: var(--color-bg-card);
-  border: 1px solid var(--color-border);
-  color: var(--color-text-secondary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all var(--duration-fast) var(--ease-out);
-}
-
-.footer__back-to-top:hover {
-  background: var(--color-accent);
-  border-color: var(--color-accent);
-  color: var(--color-bg-primary);
-  transform: translateY(-3px);
-}
-
-.footer__bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--space-lg);
-  padding-top: var(--space-xl);
-  font-size: var(--fs-tiny);
-  color: var(--color-text-tertiary);
-}
-
-.footer__bottom p {
+/* Copyright 2026 */
+.copy p {
   margin: 0;
+  color: #12141D;
+  font-family: var(--font-body, 'Inter', 'DM Sans', sans-serif);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
 }
 
-.footer__heart {
-  color: #ff4757;
-}
-
+/* Responsive */
 @media (max-width: 768px) {
-  .footer__top {
-    flex-direction: column;
-    align-items: flex-start;
+  .orido_tm_copyright {
+    padding: 24px 0;
   }
 
-  .footer__bottom {
+  .copyright_inner {
     flex-direction: column;
-    align-items: flex-start;
-    gap: var(--space-xs);
+    text-align: center;
+    gap: 12px;
+  }
+
+  .footer__logo {
+    font-size: 22px;
+  }
+
+  .copy p {
+    font-size: 14px;
   }
 }
 </style>

@@ -15,7 +15,7 @@
           <!-- Description text -->
           <div class="skills-trito__text">
             <p>
-              Au fil des années, j'ai acquis une expertise solide sur un large éventail de technologies modernes. Du frontend au backend, je maîtrise l'ensemble de la stack pour livrer des projets complets et robustes.
+              Spécialisé dans l'écosystème Java / Spring Boot pour les backends d'entreprise et Vue 3 / Nuxt pour les interfaces modernes, j'intègre également une solide expertise en géomatique (SIG), bases de données et architectures distribuées.
             </p>
           </div>
         </div>
@@ -68,11 +68,10 @@
 
 <script setup lang="ts">
 const skills = [
-  'Vue.js', 'Nuxt', 'React', 'TypeScript',
-  'JavaScript', 'Node.js', 'Python', 'PHP',
-  'HTML5', 'CSS3', 'PostgreSQL',
-  'MongoDB', 'Docker', 'Git', 'REST API',
-  'GraphQL', 'Firebase',
+  'Java', 'Spring Boot', 'Vue.js 3', 'Nuxt 4',
+  'TypeScript', 'JavaScript', 'REST API', 'PostgreSQL',
+  'MySQL', 'Docker', 'WebSockets', 'Géomatique & SIG',
+  'Python', 'Git & GitHub', 'Linux / Bash',
 ]
 </script>
 

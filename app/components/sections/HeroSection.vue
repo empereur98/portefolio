@@ -1,12 +1,22 @@
 <template>
   <section class="trito-hero" id="home">
-    <!-- Wavy texture overlay -->
+    <!-- Topographic / Plissements de terrain contour lines background overlay -->
     <div class="trito-hero__texture" aria-hidden="true">
-      <svg class="trito-hero__texture-svg" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M-100 200 C 300 100, 600 400, 1100 250 C 1300 190, 1500 300, 1600 280" stroke="rgba(255, 255, 255, 0.14)" stroke-width="2" fill="none"/>
-        <path d="M-50 350 C 350 250, 650 550, 1150 400 C 1350 340, 1550 450, 1650 430" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1.5" fill="none"/>
-        <path d="M-80 500 C 320 400, 620 700, 1120 550 C 1320 490, 1520 600, 1620 580" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1.5" fill="none"/>
-        <path d="M-100 680 C 300 580, 600 880, 1100 730 C 1300 670, 1500 780, 1600 760" stroke="rgba(255, 255, 255, 0.06)" stroke-width="1.5" fill="none"/>
+      <svg class="trito-hero__texture-svg" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M-50 80 C 200 40, 450 140, 750 70 C 1050 10, 1250 120, 1500 60" stroke="rgba(255, 255, 255, 0.2)" stroke-width="1.8" fill="none"/>
+        <path d="M-50 140 C 180 100, 420 200, 720 130 C 1020 60, 1280 180, 1500 120" stroke="rgba(36, 49, 94, 0.08)" stroke-width="1.5" fill="none"/>
+        <path d="M-50 200 C 220 150, 470 260, 770 190 C 1070 120, 1260 240, 1500 180" stroke="rgba(255, 255, 255, 0.18)" stroke-width="1.6" fill="none"/>
+        <path d="M-50 260 C 190 210, 440 320, 740 250 C 1040 180, 1300 300, 1500 240" stroke="rgba(36, 49, 94, 0.08)" stroke-width="1.8" fill="none"/>
+        <path d="M-50 320 C 230 260, 480 380, 790 300 C 1100 220, 1270 360, 1500 300" stroke="rgba(255, 255, 255, 0.2)" stroke-width="1.6" fill="none"/>
+        <path d="M-50 380 C 170 320, 430 430, 730 360 C 1030 290, 1310 410, 1500 350" stroke="rgba(36, 49, 94, 0.08)" stroke-width="1.5" fill="none"/>
+        <path d="M-50 440 C 210 380, 460 490, 780 410 C 1090 330, 1280 470, 1500 410" stroke="rgba(255, 255, 255, 0.18)" stroke-width="1.8" fill="none"/>
+        <path d="M-50 500 C 180 440, 440 550, 740 470 C 1040 390, 1320 520, 1500 470" stroke="rgba(36, 49, 94, 0.08)" stroke-width="1.5" fill="none"/>
+        <path d="M-50 560 C 220 500, 470 610, 770 530 C 1070 450, 1290 580, 1500 530" stroke="rgba(255, 255, 255, 0.18)" stroke-width="1.6" fill="none"/>
+        <path d="M-50 620 C 190 560, 450 660, 750 590 C 1050 520, 1310 640, 1500 590" stroke="rgba(36, 49, 94, 0.08)" stroke-width="1.8" fill="none"/>
+        <path d="M-50 680 C 230 620, 480 720, 790 650 C 1100 580, 1270 700, 1500 650" stroke="rgba(255, 255, 255, 0.2)" stroke-width="1.5" fill="none"/>
+        <path d="M-50 740 C 170 680, 430 780, 730 710 C 1030 640, 1310 760, 1500 710" stroke="rgba(36, 49, 94, 0.08)" stroke-width="1.7" fill="none"/>
+        <path d="M-50 800 C 210 740, 460 840, 780 770 C 1090 700, 1280 820, 1500 770" stroke="rgba(255, 255, 255, 0.18)" stroke-width="1.8" fill="none"/>
+        <path d="M-50 860 C 180 800, 440 900, 740 830 C 1040 760, 1320 880, 1500 830" stroke="rgba(36, 49, 94, 0.08)" stroke-width="1.5" fill="none"/>
       </svg>
     </div>
 
@@ -23,7 +33,7 @@
           </h1>
 
           <p class="trito-hero__role animate-on-scroll fade-up animate-delay-2">
-            Développeur FullStack basé au Cameroun
+            Développeur Full Stack (Java & Vue/Nuxt) | Systèmes Métiers & SIG
           </p>
 
           <div class="trito-hero__actions animate-on-scroll fade-up animate-delay-3">
@@ -43,7 +53,7 @@
               </svg>
             </div>
             <p class="trito-hero__quote-text">
-              « Je transforme vos besoins techniques en solutions logicielles performantes, élégantes et pérennes. »
+              « Je conçois des architectures Java robustes et des interfaces Nuxt réactives pour propulser vos applications métiers et plateformes web. »
             </p>
           </div>
         </div>
@@ -134,7 +144,7 @@
 <style scoped>
 .trito-hero {
   position: relative;
-  background-color: var(--color-trito-green, #05CE91);
+  background-color: #08dba9;
   min-height: 100vh;
   display: flex;
   align-items: center;

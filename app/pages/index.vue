@@ -28,22 +28,19 @@
       <!-- About Section -->
       <SectionsAboutSection />
 
+      <!-- Testimonials Section -->
+      <SectionsTestimonialsSection />
+
       <!-- Services Section -->
       <SectionsServicesSection />
 
       <!-- Projects / Works Section -->
       <SectionsProjectsSection />
 
-      <!-- Testimonials Section -->
-      <SectionsTestimonialsSection />
-
       <!-- Technical Articles / Blog Section -->
       <SectionsBlogSection />
 
-      <!-- Freelance Banner Section -->
-      <SectionsFreelanceSection />
-
-      <!-- Contact Section -->
+      <!-- Contact Section (Last section before footer) -->
       <SectionsContactSection />
     </main>
 
@@ -59,7 +56,6 @@ const sectionIds = [
   'about',
   'services',
   'projects',
-  'testimonials',
   'blog',
   'contact'
 ]

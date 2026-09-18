@@ -59,7 +59,6 @@ const navItems = [
   { id: 'about', label: 'À propos' },
   { id: 'services', label: 'Services' },
   { id: 'projects', label: 'Projets' },
-  { id: 'testimonials', label: 'Témoignages' },
   { id: 'blog', label: 'Blog' },
   { id: 'contact', label: 'Contact' }
 ]
@@ -95,12 +94,12 @@ onUnmounted(() => {
 }
 
 .header--scrolled {
-  background: rgba(10, 10, 26, 0.92);
+  background: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   padding: 16px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.35);
+  border-bottom: 1px solid rgba(36, 49, 94, 0.08);
+  box-shadow: 0 4px 25px rgba(36, 49, 94, 0.08);
 }
 
 .header__container {
@@ -135,7 +134,7 @@ onUnmounted(() => {
 }
 
 .header--scrolled .header__logo-text {
-  color: #FFFFFF;
+  color: var(--color-trito-navy, #24315E);
 }
 
 /* Navigation */
@@ -164,7 +163,7 @@ onUnmounted(() => {
 }
 
 .header--scrolled .header__nav-link {
-  color: #a0a0c0;
+  color: var(--color-trito-navy, #24315E);
 }
 
 .header__nav-link:hover,
@@ -173,7 +172,7 @@ onUnmounted(() => {
 }
 
 .header--scrolled .header__nav-link.active {
-  color: var(--color-accent);
+  color: var(--color-trito-coral, #FF4612);
 }
 
 .header__nav-link::after {
@@ -188,7 +187,7 @@ onUnmounted(() => {
 }
 
 .header--scrolled .header__nav-link::after {
-  background: var(--color-accent);
+  background: var(--color-trito-coral, #FF4612);
 }
 
 .header__nav-link:hover::after,
@@ -227,15 +226,16 @@ onUnmounted(() => {
 }
 
 .header--scrolled .header__cta {
-  background-color: var(--color-accent);
-  color: var(--color-bg-primary) !important;
-  border-color: var(--color-accent);
+  background-color: var(--color-trito-navy, #24315E);
+  color: #FFFFFF !important;
+  border-color: var(--color-trito-navy, #24315E);
 }
 
 .header--scrolled .header__cta:hover {
   background-color: #FFFFFF !important;
-  color: var(--color-bg-primary) !important;
-  border-color: #FFFFFF !important;
+  color: var(--color-trito-navy, #24315E) !important;
+  border-color: var(--color-trito-navy, #24315E) !important;
+  box-shadow: 0 6px 20px rgba(36, 49, 94, 0.25);
 }
 
 /* Hamburger Mobile Toggle */
@@ -262,7 +262,7 @@ onUnmounted(() => {
 }
 
 .header--scrolled .header__burger span {
-  background: #FFFFFF;
+  background: var(--color-trito-navy, #24315E);
 }
 
 .header__burger.active span:nth-child(1) {

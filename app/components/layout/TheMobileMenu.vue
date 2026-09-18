@@ -54,7 +54,6 @@ const navItems = [
   { id: 'about', label: 'À propos' },
   { id: 'services', label: 'Services' },
   { id: 'projects', label: 'Projets' },
-  { id: 'testimonials', label: 'Témoignages' },
   { id: 'blog', label: 'Blog' },
   { id: 'contact', label: 'Contact' }
 ]
